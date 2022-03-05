@@ -36,6 +36,13 @@ ul {
     font-weight: 600;
 }
 
+.home, 
+.nutrition, 
+.breeds, 
+.contact {
+    height: 100vh;
+}
+
 
 /* LAYOUT =================== */
 .container {
@@ -138,4 +145,29 @@ nav-open {
     height: 5px;
     background: #ce0f0f;
     border-radius: 50px;
+}
+
+
+/* HOME SECTION =============== */
+.home-data {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.home-data h3 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #ce0f0f;
+    text-transform: uppercase;
+}
+
+.home-data h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-transform: uppercase;
 }
