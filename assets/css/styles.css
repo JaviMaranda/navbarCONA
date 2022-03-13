@@ -14,6 +14,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 3rem 0 0 0;
     font-size: .938rem;
+    background: #EEE6DE;
 }
 
 a {
@@ -59,7 +60,7 @@ ul {
     position: fixed;
     top: 0;
     left: 0;
-    transition: all 0,3s;
+    transition: all 0.3s;
 }
 .nav {
    height: 3rem;
@@ -93,7 +94,7 @@ nav-open {
         padding: 3.5rem 0 1.5rem;
         text-align: center;
         background: #000;
-        transition: .4s;
+        transition: 0.4s;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
         z-index: 99999;
     }    
@@ -105,13 +106,13 @@ nav-open {
 
 .nav-link {
     font-size: 1.3rem;
-    color: #a5a5a5;
+    color: #fff;
     font-weight: 400;
     transition: .3s;
 }
 
 .nav-link:hover {
-    color: #fff;
+    color: #666;
     font-weight: 500;
 }
 
@@ -138,7 +139,7 @@ nav-open {
 .active-link::before {
     content: '';
     position: absolute;
-    bottom: -.5rem;
+    bottom: -0.5rem;
     left: 50%;
     transform: translateX(-50%);
     width: 20px;
@@ -147,6 +148,11 @@ nav-open {
     border-radius: 50px;
 }
 
+/* CHANGE THE BACKGROUND ON SCROLL ==================*/
+.scroll-header {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    background: #EEE6DE;
+}
 
 /* HOME SECTION =============== */
 .home-data {
@@ -170,4 +176,77 @@ nav-open {
     font-weight: 700;
     line-height: 3.5rem;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 576px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .home-data h3 {
+        font-size: 1.3rem;
+    }
+
+    .home-data h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding-top: 7rem;
+    }
+
+    .nav {
+        height: 5rem;
+    }
+
+    .nav-list {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-left: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .nav-link, .logo {
+        font-size: 1rem;
+        color: #000;
+    }
+
+    .nav-link:hover {
+        color: #ce0f0f;
+    }
+
+    .active-link {
+        color: #ce0f0f;
+    }
+
+    .active-link::before {
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+    }
+
+    .nav-open,
+    .nav-close {
+        display: none;
+    }
+
+    .home-data h3 {
+        font-size: 2rem;
+    }
+
+    .home-data h1 {
+        font-size: 5.5rem;
+        line-height: 6rem;
+        font-weight: 700;
+    }
 }

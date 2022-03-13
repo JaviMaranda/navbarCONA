@@ -24,7 +24,7 @@ navLink.forEach((link) => link.addEventListener('click', linkAction));
 // ACTIVE SECTION LINK ==============
 const section = document.querySelectorAll("section[id");
 
-function scrollActive () {
+function scrollActive() {
     const scrollY = windows.pageYOffset;
 
     section.forEach((section) => {
@@ -34,13 +34,22 @@ function scrollActive () {
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document
-                .querySelector('.main-nav a[href*=' + sectionId + ']')
-                .classList.add('active-link');
-        }else {
+                .querySelector('.main-nav a[href*=' + sectionId + "]")
+                .classList.add("active-link");
+        } else {
             document
-            .querySelector('.main-nav a[href*=' + sectionId + ']')
-            .classList.remove('active-link');
-
+            .querySelector('.main-nav a[href*=' + sectionId + "]")
+            .classList.remove("active-link");
         }
-    })
+    });
 }
+window.addEventListener("scroll", scrollActive);
+
+// CHANGE THE BACKGROUND ON SCROLL ===============
+function changeHeaderColor() {
+    const nav = document.getElementById('header')
+
+    if (this.scrollY >= 200) nav.classList.add("scroll-header")
+    else nav.classList.remove("scroll-header");
+}
+window.addEventListener("scroll", changeHeaderColor);
