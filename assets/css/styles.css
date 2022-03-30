@@ -34,7 +34,7 @@ ul {
 /* REUSABLE CSS CLASSES */
 
 .section {
-    
+    width: 100%;
 }
 .section-title {
     font-size: 1.5rem;
@@ -48,7 +48,7 @@ ul {
 .nutrition, 
 .breeds, 
 .contact {
-    height: 100%;
+    
 }
 
 
@@ -113,7 +113,7 @@ nav-open {
 
 .nav-link {
     font-size: 1.3rem;
-    color: #fff;
+    color: #EEE6DE;
     font-weight: 400;
     transition: .3s;
 }
@@ -185,7 +185,13 @@ nav-open {
     text-transform: uppercase;
 }
 
-@media screen and (min-width: 576px) {
+
+@media screen and (max-width: 576px) {
+
+    .max-width {
+        padding: 0;
+    }
+
     .section-title {
         font-size: 2rem;
     }
