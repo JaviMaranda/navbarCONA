@@ -37,7 +37,7 @@ ul {
     width: 100%;
 }
 .section-title {
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 300%;
     text-align: center;
     margin-bottom: 1.5rem;
@@ -45,10 +45,12 @@ ul {
 }
 
 .home, 
-.nutrition, 
-.breeds, 
+.bio, 
+.proyects, 
 .contact {
-    
+
+    color: #1D1D1B;
+
 }
 
 
@@ -78,7 +80,7 @@ ul {
 
 .logo,
 .nav-open {
-    color: #000;
+    color: #1D1D1B;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -100,7 +102,7 @@ nav-open {
         width: 100%;
         padding: 3.5rem 0 1.5rem;
         text-align: center;
-        background: #000;
+        background: #1D1D1B;
         transition: 0.4s;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
         z-index: 99999;
@@ -179,10 +181,21 @@ nav-open {
 }
 
 .home-data h1 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     font-weight: 700;
     line-height: 3.5rem;
     text-transform: uppercase;
+
+
+}
+
+.text-1 {
+    font-size: 1.5rem;
+    font-family: 'Poly', serif;
+}
+.text-2 {
+    font-size: 1.5rem;
+    font-family: 'Poly', serif;
 }
 
 
@@ -193,16 +206,25 @@ nav-open {
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .home-data h3 {
-        font-size: 1.3rem;
+        font-size: 2rem;
     }
 
     .home-data h1 {
-        font-size: 4rem;
-        line-height: 5rem;
+        font-size: 2rem;
+        line-height: 3.5rem;
+    }
+
+    .text-1 {
+        font-size: 1.3rem;
+    }
+    .text-2 {
+        font-size: 1.3rem;
+       
+
     }
 }
 
@@ -231,7 +253,7 @@ nav-open {
 
     .nav-link, .logo {
         font-size: 1rem;
-        color: #000;
+        color: #1D1D1B;
     }
 
     .nav-link:hover {
