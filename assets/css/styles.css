@@ -5,24 +5,20 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 .max-width{
     max-width: 1300px;
     padding: 0 0px;
     margin: 0px auto;
 }
-
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 3rem 0 0 0;
     font-size: .938rem;
     background: #EEE6DE;
 }
-
 a {
     text-decoration: none;
 }
@@ -49,9 +45,7 @@ ul {
 .bio, 
 .proyects, 
 .contact {
-
     color: #1D1D1B;
-
 }
 
 /* LAYOUT =================== */
@@ -78,17 +72,18 @@ ul {
    align-items: center;
 }
 
-.logo,
+.logo-cona img {
+    margin-top: 6px;
+    width: 4.5rem;
+}
 .nav-open {
     color: #1D1D1B;
     font-weight: 500;
     transition: 0.3s;
 }
-
 .logo:hover, .nav-open:hover {
     color: #ec21b9;
 }
-
 nav-open {
     font-size: 1.2rem;
     cursor: pointer;
@@ -108,23 +103,18 @@ nav-open {
         z-index: 99999;
     }    
 }
-
 .nav-item {
     margin-bottom: 1.5rem;
 }
-
 .nav-link {
     font-size: 1.3rem;
     color: #EEE6DE;
-    font-weight: 400;
+    font-weight: 600;
     transition: .3s;
 }
-
 .nav-link:hover {
-    color: #666;
-    font-weight: 500;
+    color: #ec21b9;
 }
-
 .nav-close {
     color: #fff;
     position: absolute;
@@ -133,7 +123,6 @@ nav-open {
     font-size: 1.7rem;
     cursor: pointer;
 }
-
 .show-menu {
     top: 0;
 }
@@ -144,7 +133,6 @@ nav-open {
     color: #fff;
     font-weight: 500;
 }
-
 .active-link::before {
     content: '';
     position: absolute;
@@ -172,137 +160,109 @@ nav-open {
     text-align: left;
     margin-top: 7rem;
 }
-
 .home-data h3 {
     font-weight: 600;
     margin-bottom: 1rem;
     color: #1D1D1B;
     text-transform: uppercase;
+} 
+.home-data .cona-img {
+    width: 14rem;
+    padding-bottom: 2rem;
 }
-
-.home-data h1 {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 2rem;
-    text-transform: uppercase;
-
-}
-
 .text-1 {
     font-size: 1.3rem;
     font-family: 'Poly', serif;
 }
-
 .text-2 {
     font-size: 1.3rem;
     font-family: 'Poly', serif;
 }
-
-
 .scroll-img {
     margin-top: 8%;
-    width: 4%;
+    width: 1.5rem;
     animation: bounce1 .8s alternate infinite ease-in;
+}
+
+/* BIO SECTION ================ */
+
+.bio {
+    color: #1D1D1B;
+    background: #DED4CB;
 }
 
 /* PROYECTS SECTION ================== */
 
 .proyects-image1 {
     width: 100%;
-    transition: .3s;
 }
 
 @media screen and (min-width: 576px) {
-
     .max-width {
         width: 100%;
     }
-
     .section-title {
         font-size: 2rem;
     }
-
     .home-data h3 {
         font-size: 2rem;
     }
-
     .home-data h1 {
         font-size: 2rem;
         line-height: 2rem;
     }
-
 }
 
 @media screen and (min-width: 767px) {
     body {
         margin: 0;
     }
-
     .section {
         padding-top: 7rem;
     }
-
     .nav {
         height: 5rem;
     }
-
     .nav-list {
         display: flex;
         align-items: center;
     }
-
     .nav-item {
         margin-left: 2.5rem;
         margin-bottom: 0;
     }
-
     .nav-link, .logo {
         font-size: 1rem;
         color: #1D1D1B;
     }
-
     .nav-link:hover {
         color: #ec21b9;
     }
-
     .active-link {
         color: #ec21b9;
     }
-
     .active-link::before {
         width: 6px;
         height: 6px;
         border-radius: 50%;
     }
-
     .nav-open,
     .nav-close {
         display: none;
     }
-
 }
 
 @media screen and (min-width: 968px) {
-
     .container {
         margin-left: auto;
         margin-right: auto;
     }
-
 }
 
 /*ANIMACIONES*/
 @keyframes bounce1 {
     0% {
         transform: translateY(-30%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
-}
-@keyframes bounce2 {
-    0% {
-        transform: translateY(-3%);
     }
     100% {
         transform: translateY(0%);
@@ -323,29 +283,29 @@ nav-open {
     font-weight: 500;
 }
 .contact .contact-content .info .sub-title {
-    color: #333;
+    color: #EEE6DE;
 }
-.contact .right form .fields{
+.contact .contact-form form .fields{
     display: flex;
 }
-.contact .right form .field,
-.contact .right form .fields .field {
+.contact .contact-form .field,
+.contact .contact-form .fields .field {
     height: 45px;
     width: 100%;
     margin-bottom: 15px;
 }
-.contact .right form .textarea {
+.contact .contact-form form .textarea {
     height: 80px;
     width: 100%;
 }
-.contact .right form .name {
+.contact .contact-form form .name {
     margin-right: 10px;
 }
-.contact .right form .email {
+.contact .contact-form form .email {
     margin-left: 10px;
 }
-.contact .right form .field input,
-.contact .right form .textarea textarea {
+.contact .contact-form form .field input,
+.contact .contact-form form .textarea textarea {
     height: 100%;
     width: 100%;
     border: 0px solid lightgrey;
@@ -353,18 +313,18 @@ nav-open {
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Montserrat';
+    font-family: Montserrat;
     background: #EEE6DE;
 }
-.contact .right form .textarea textarea {
+.contact .contact-form form .textarea textarea {
     padding-top: 10px;
     resize: none;
 }
-.contact .right form .button {
+.contact .contact-form form .button {
     height: 47px;
     width: 170px;
 }
-.contact .right form .button button {
+.contact .contact-form form .button button {
     width: 100%;
     height: 100%;
     border: 2px solid #333;
@@ -376,9 +336,10 @@ nav-open {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.contact .right form .button button:hover {
-    color: #333;
+.contact .contact-form form .button button:hover {
+    color: #ec21b9;
     background: none;
+    border: 2px solid #ec21b9
 }
 .contact .contact-content .column {
     width: 100%;
