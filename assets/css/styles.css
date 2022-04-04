@@ -201,7 +201,7 @@ nav-open {
 
 .scroll-img {
     margin-top: 8%;
-    width: 4%;
+    width: 20px;
     animation: bounce1 .8s alternate infinite ease-in;
 }
 
