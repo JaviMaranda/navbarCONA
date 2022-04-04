@@ -198,10 +198,18 @@ nav-open {
     font-family: 'Poly', serif;
 }
 
+
+.scroll-img {
+    margin-top: 8%;
+    width: 4%;
+    animation: bounce1 .8s alternate infinite ease-in;
+}
+
 /* PROYECTS SECTION ================== */
 
 .proyects-image1 {
     width: 100%;
+    transition: .3s;
 }
 
 @media screen and (min-width: 576px) {
@@ -281,6 +289,24 @@ nav-open {
         margin-right: auto;
     }
 
+}
+
+/*ANIMACIONES*/
+@keyframes bounce1 {
+    0% {
+        transform: translateY(-30%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+@keyframes bounce2 {
+    0% {
+        transform: translateY(-3%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 /*CONTACTO CSS*/
