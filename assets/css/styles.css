@@ -78,7 +78,7 @@ ul {
 }
 .nav-open {
     color: #1D1D1B;
-    font-weight: 500;
+    font-weight: 600;
     transition: 0.3s;
 }
 .logo:hover, .nav-open:hover {
@@ -131,7 +131,7 @@ nav-open {
 .active-link {
     position: relative;
     color: #fff;
-    font-weight: 500;
+    font-weight: 600;
 }
 .active-link::before {
     content: '';
