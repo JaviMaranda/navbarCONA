@@ -35,9 +35,10 @@ ul {
 }
 .section-title {
     font-size: 2rem;
-    line-height: 300%;
-    text-align: center;
+    line-height: 100%;
+    text-align: left;
     margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
     font-weight: 600;
 }
 
@@ -74,7 +75,7 @@ ul {
 
 .logo-cona img {
     margin-top: 6px;
-    width: 4.5rem;
+    width: 6rem;
 }
 .nav-open {
     color: #1D1D1B;
@@ -152,10 +153,16 @@ nav-open {
 }
 
 /* HOME SECTION =============== */
+.home-data h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    text-align: center;
+}
+
 .home-data {
     display: flex;
     justify-content: center;
-    align-items: left;
+    align-items: center;
     flex-direction: column;
     text-align: left;
     margin-top: 7rem;
@@ -166,21 +173,20 @@ nav-open {
     color: #1D1D1B;
     text-transform: uppercase;
 } 
-.home-data .cona-img {
-    width: 14rem;
-    padding-bottom: 2rem;
-}
 .text-1 {
+    margin-left: -1.5rem;
     font-size: 1.3rem;
     font-family: 'Poly', serif;
 }
 .text-2 {
+    margin-left: -1.5rem;
     font-size: 1.3rem;
     font-family: 'Poly', serif;
 }
 .scroll-img {
-    margin-top: 8%;
-    width: 1.5rem;
+    margin-left: 5.3rem;
+    margin-top: 5.3rem;
+    width: 1.2rem;
     animation: bounce1 .8s alternate infinite ease-in;
 }
 
@@ -202,20 +208,25 @@ nav-open {
         width: 100%;
     }
     .section-title {
-        font-size: 2rem;
+        font-size: 4rem;
     }
     .home-data h3 {
         font-size: 2rem;
     }
     .home-data h1 {
-        font-size: 2rem;
+        font-size: 6rem;
         line-height: 2rem;
+        margin-bottom: 2rem;
     }
 }
 
 @media screen and (min-width: 767px) {
     body {
         margin: 0;
+    }
+    .home h1 {
+        font-size: 7rem;
+        margin-bottom: 50px;
     }
     .section {
         padding-top: 7rem;
