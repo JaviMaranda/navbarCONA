@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 html {
     scroll-behavior: smooth;
 }
@@ -34,16 +34,16 @@ ul {
     padding: 4.5rem 0 2rem;
 }
 .section-title {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 100%;
     text-align: left;
     margin-bottom: 1.5rem;
-    margin-left: 1.5rem;
+    /*margin-left: 1.5rem;*/
     font-weight: 900;
 }
 
 .home, 
-.bio, 
+.bio,
 .proyects, 
 .contact {
     color: #1D1D1B;
@@ -75,10 +75,11 @@ ul {
 
 .logo-cona img {
     margin-top: 6px;
-    width: 6rem;
+    width: 7rem;
 }
 .nav-open {
     color: #1D1D1B;
+    font-size: 1.3rem;
     font-weight: 600;
     transition: 0.3s;
 }
@@ -131,7 +132,7 @@ nav-open {
 /* Active Link ============== */
 .active-link {
     position: relative;
-    color: #fff;
+    color: #EEE6DE;
     font-weight: 600;
 }
 .active-link::before {
@@ -174,13 +175,13 @@ nav-open {
     text-transform: uppercase;
 } 
 .text-1 {
-    margin-left: -1.5rem;
-    font-size: 1.3rem;
+    margin: 0.5rem 0 0 0.5rem;
+    font-size: 1.1rem;
     font-family: 'Poly', serif;
 }
 .text-2 {
-    margin-left: -1.5rem;
-    font-size: 1.3rem;
+    margin: 0 0 0 0.5rem;
+    font-size: 1.1rem;
     font-family: 'Poly', serif;
 }
 .scroll-img {
@@ -194,7 +195,7 @@ nav-open {
 
 .bio {
     color: #1D1D1B;
-    background: #DED4CB;
+    background: #1fff69;
 }
 
 /* PROYECTS SECTION ================== */
